@@ -7,8 +7,11 @@ Usage:
 
 
 from msilib.schema import Error
+from pprint import pprint as pp
+import airtravel
 import generatordemo
 import iterationtoolsdemo
+
 
 def Add(x, y):
     """
@@ -97,16 +100,35 @@ def ComprehensionsDemo():
 
 def GeneratorDemo():
     a = iter(generatordemo.gen123())
-    print(a);
+    print(a)
     print(next(a))
     print(next(a))
     print(next(a))
 
 
 def IteratDemo():
-    #iterationtoolsdemo.IsliceDemo()
-    #iterationtoolsdemo.AnyAllDemo()
+    # iterationtoolsdemo.IsliceDemo()
+    # iterationtoolsdemo.AnyAllDemo()
     iterationtoolsdemo.ZipDemo()
+
+
+def AirTravelDemo():
+    #aircraft = airtravel.Aircraft("J-PRG8", "B737", 25, 6)
+    #flight = airtravel.Flight("CX123", aircraft)
+    #print(flight.number())
+    #print(flight.aircraft_model())
+    #pp(flight._seating)
+    #flight.allocate_seat("5B", "John")
+    #flight.allocate_seat("25D", "Peter")
+    #pp(flight._seating)
+    #flight.relocate_passenger("25D", "5C")
+    #pp(flight._seating)
+    f1, f2 = airtravel.make_flights()
+    pp(f1._seating)
+    pp(f1.num_available_seats())
+    pp(f2._seating)
+    pp(f2.num_available_seats())
+    f1.make_boarding_cards(airtravel.card_printer)
 
 
 def Main():
@@ -116,7 +138,8 @@ def Main():
     # ExceptionDemo()
     # ComprehensionsDemo()
     # GeneratorDemo()
-    IteratDemo()
+    # IteratDemo()
+    AirTravelDemo()
 
 
 if __name__ == '__main__':
