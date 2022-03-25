@@ -11,6 +11,8 @@ from pprint import pprint as pp
 import airtravel
 import generatordemo
 import iterationtoolsdemo
+import filedemo
+import fractal
 
 
 def Add(x, y):
@@ -115,20 +117,28 @@ def IteratDemo():
 def AirTravelDemo():
     #aircraft = airtravel.Aircraft("J-PRG8", "B737", 25, 6)
     #flight = airtravel.Flight("CX123", aircraft)
-    #print(flight.number())
-    #print(flight.aircraft_model())
-    #pp(flight._seating)
+    # print(flight.number())
+    # print(flight.aircraft_model())
+    # pp(flight._seating)
     #flight.allocate_seat("5B", "John")
     #flight.allocate_seat("25D", "Peter")
-    #pp(flight._seating)
+    # pp(flight._seating)
     #flight.relocate_passenger("25D", "5C")
-    #pp(flight._seating)
+    # pp(flight._seating)
     f1, f2 = airtravel.make_flights()
     pp(f1._seating)
     pp(f1.num_available_seats())
     pp(f2._seating)
     pp(f2.num_available_seats())
     f1.make_boarding_cards(airtravel.card_printer)
+
+
+def FileDemo():
+    # filedemo.WriteTextFileDemo()
+    # filedemo.ReadTextFileDemo()
+
+    pixels = fractal.mandelbrot(448, 256)
+    filedemo.write_grayscale("mandel.bmp", pixels)
 
 
 def Main():
@@ -139,7 +149,8 @@ def Main():
     # ComprehensionsDemo()
     # GeneratorDemo()
     # IteratDemo()
-    AirTravelDemo()
+    # AirTravelDemo()
+    FileDemo()
 
 
 if __name__ == '__main__':
