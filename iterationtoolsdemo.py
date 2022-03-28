@@ -1,6 +1,12 @@
 import itertools
 
 
+def demo():
+    # iterationtoolsdemo.IsliceDemo()
+    # iterationtoolsdemo.AnyAllDemo()
+    ZipDemo()
+
+
 def IsliceDemo():
     r = range(20)
     print(r)
@@ -35,7 +41,7 @@ def ZipDemo():
     m = [3, 5, 8, 23, 1, 78, 7, 9]
     n = [8, 2, 15, 8, 55, 9, 81]
     o = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
-    x = zip(m, n,o)
+    x = zip(m, n, o)
     print(x)
     for item in x:
         print(f"{type(item)}: {item}")

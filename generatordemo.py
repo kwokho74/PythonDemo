@@ -1,4 +1,12 @@
-def gen123() :
+def demo():
+    a = iter(gen123())
+    print(a)
+    print(next(a))
+    print(next(a))
+    print(next(a))
+
+
+def gen123():
     print("going to yield 1")
     yield 1
     print("going to yield 2")
