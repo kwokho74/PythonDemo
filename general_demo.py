@@ -1,12 +1,12 @@
 def demo():
-    print(Add(5, 6))
-    ListDemo()
-    AsteriskDemo()
-    ExceptionDemo()
-    ComprehensionsDemo()
+    print(add(5, 6))
+    list_demo()
+    asterisk_demo()
+    exception_demo()
+    comprehensions_demo()
 
 
-def Add(x, y):
+def add(x, y):
     """
     Adds 2 number and return the result.
 
@@ -20,7 +20,7 @@ def Add(x, y):
     return x+y
 
 
-def ListDemo():
+def list_demo():
     s = [45, 76, 22, 98, 123, 99, 368]
     print(s[1:3])
     print(s[1:-1])
@@ -38,7 +38,7 @@ def ListDemo():
     print(f"{v}, {v is s}")
 
 
-def AsteriskDemo():
+def asterisk_demo():
     c = [24, 56]
     d = c * 4
     print(d)
@@ -55,7 +55,7 @@ def AsteriskDemo():
     print(f)
 
 
-def ExceptionDemo():
+def exception_demo():
     m = 0
     n = 12
     try:
@@ -67,7 +67,7 @@ def ExceptionDemo():
         print("Clean up")
 
 
-def ComprehensionsDemo():
+def comprehensions_demo():
     s = "This is a string that used to demostrate the comprehensions for list and set"
     words = s.split()
     print(words)

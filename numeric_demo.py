@@ -4,12 +4,12 @@ from fractions import Fraction
 
 
 def demo():
-    #decDemo()
-    #trapFloatDemo()
-    fractionDemo()
+    #dec_demo()
+    #trap_float_demo()
+    fraction_demo()
 
 
-def decDemo():
+def dec_demo():
     m = 0.8
     n = 0.7
     o = m-n
@@ -31,7 +31,7 @@ def decDemo():
     print(f"x: {x}\ny: {y}\nz: {z} [{type(z)}]\n")
 
 
-def trapFloatDemo():
+def trap_float_demo():
     # enable decimal.FloatOperation exception
     decimal.getcontext().traps[decimal.FloatOperation] = True
 
@@ -47,7 +47,7 @@ def trapFloatDemo():
     print(f"t: {t}\nu: {u}\nv: {v} [{type(v)}]\n")
 
 
-def fractionDemo():
+def fraction_demo():
     a = Fraction(5, 7)
     b = Fraction(1, 3)
     c = a + b
