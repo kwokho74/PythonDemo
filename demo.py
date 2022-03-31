@@ -12,16 +12,18 @@ import airtravel_demo
 import file_demo
 import numeric_demo
 import datetime_demo
+import form_demo
 
 
 def main():
-    # generaldemo.demo()
-    # generatordemo.demo()
-    # iterationtoolsdemo.demo()
-    # airtraveldemo.demo()
-    # filedemo.demo()
-    # numericdemo.demo()
-    datetime_demo.demo()
+    # general_demo.demo()
+    # generator_demo.demo()
+    # iteration_tools_demo.demo()
+    # airtravel_demo.demo()
+    # file_demo.demo()
+    # numeric_demo.demo()
+    # datetime_demo.demo()
+    pass
 
 
 if __name__ == '__main__':

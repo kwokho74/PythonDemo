@@ -1,9 +1,9 @@
 import sys
-import fractal
+import pkg.fractal as fractal
 
 def demo():
-    # filedemo.WriteTextFileDemo()
-    # filedemo.ReadTextFileDemo()
+    #WriteTextFileDemo()
+    #ReadTextFileDemo()
 
     pixels = fractal.mandelbrot(448, 256)
     write_grayscale("mandel.bmp", pixels)

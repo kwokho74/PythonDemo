@@ -1,6 +1,6 @@
 import unittest
 import general_demo
-import airtravel
+import pkg.airtravel as airtravel
 
 
 class DemoTestCase(unittest.TestCase):

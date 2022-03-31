@@ -1,4 +1,4 @@
-import airtravel
+import pkg.airtravel as airtravel
 from pprint import pprint as pp
 
 
